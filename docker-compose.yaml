@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  zkpserver:
+    build: .
+    volumes:
+      - ./:/zkp-server
+    environment:
+      - USER=guido
+    container_name: zkpserver
